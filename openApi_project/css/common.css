@@ -1,0 +1,57 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+il,li{list-style: none;}
+a {text-decoration: none; color: #333;}
+
+body{font-family: 'Pretendard';}
+
+
+.container {width: 1060px; height: 100%; margin: 0 auto; background-color: #aaa;}
+
+
+/* header */
+header{width: 100%; height: 235px;background-color: gold;}
+.header_top {width: 1060px; height: 40px; display: flex; justify-content: space-between;  background-color: tomato;}
+header ul{display: flex; justify-content: space-evenly;}
+header li{padding: 0 7px;}
+
+.main_header{width: 75%; height: 145px; display: flex; align-items: center; background-color: aqua;}
+.logo {width: 175px;height: 60px; display: flex;  background-color: yellowgreen;}
+.logo i {font-size: 50px; color: white;}
+.search {width: 570px; height: 85px;  margin-left: 30px; background-color: purple;}
+.mypage{width: 100%; height: 50px; display: flex; justify-content: space-between; background-color: azure;}
+
+
+/* .noti{height: 55px; display: flex; justify-content: eft; background-color: burlywood;}
+.roll{margin: 0 0 24px;} */
+
+
+
+/* footer */
+
+footer{width: 100%; height: 462.8px; background-color: skyblue;}
+
+
+.block{padding: 40px 0px 38px;}
+
+.up{height: 238px; display: flex; background-color: blanchedalmond;}
+.consumer{width: 318px;height: 238.2px;background-color: violet;}
+.fnav{height: 238.2px; display: flex; justify-content: space-evenly;  width: 743px; margin-left: auto; background-color: yellow;}
+.down{height: 146.8px; display: flex; align-items: center;justify-content: left;  background-color: thistle;}
+footer ul{display: flex; justify-content: space-evenly;}
+.flogo{width: 135px; height: 55px; background-color: pink;}
+.ful{height: 19.2px;}
+.fclass{height: 48px;}
