@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-
+.mainall{height: 3000px;}
 /* silder */
 #slider {width: 100%; height: 370px; background-color: aquamarine;}
 /* main */
@@ -24,4 +24,27 @@
     height: 100%;
     object-fit: cover;
 }
-.new{width: 1120px; height: 500px; margin: 50px auto;}
+.new{width: 1120px; height: 500px; margin: 50px auto; }
+.new1{width: 1120px; height: 500px; margin: 50px auto; }
+.new2{width: 1120px; height: 500px; margin: 50px auto; }
+
+.new ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
+.new li{padding: 0 7px;}
+
+.new1 ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
+.new1 li{padding: 0 7px;}
+
+.new2 ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
+.new2 li{padding: 0 7px;}
+
+h2 {
+
+  position: relative;   
+  z-index: 2;
+  background: #fff; /* 겹침 방지 */
+  margin-bottom: 10px;
+}
+
+
+
+

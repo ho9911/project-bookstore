@@ -38,6 +38,15 @@ header li{padding: 0 7px;}
 /* .noti{height: 55px; display: flex; justify-content: eft; background-color: burlywood;}
 .roll{margin: 0 0 24px;} */
 
+/* main */
+.new ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
+.new li{padding: 0 7px;}
+
+.new1 ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
+.new1 li{padding: 0 7px;}
+
+.new2 ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
+.new2 li{padding: 0 7px;}
 
 
 /* footer */
