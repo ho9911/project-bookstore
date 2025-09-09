@@ -1,0 +1,8 @@
+window.FO_CONFIG = {
+    BranchNew : {
+        iconStartDate : '2025-06-20 00:00:00',
+        iconEndDate : '2025-07-06 23:59:59',
+        branchRegionCd: '01',
+        branchCd : 6550
+    }
+};

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영풍문고</title>
-<!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
 
     <link rel="stylesheet" href="./openApi_project/css/common.css">
     <link rel="stylesheet" href="./openApi_project/css/index.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -33,12 +35,14 @@
             </div>
             <div class="main_header">
                 <div class="logo">
-                    <i class="fa-brands fa-instagram"></i>
-                    <h1>영풍문고</h1>
+                    <img src="./openApi_project/img/2fbdbcb3-3c0c-46e5-a30b-3e8acdbae0c2.png" alt="윗로고" style="width: 169px; height: 38px;">
                 </div>
-                
+
                 <div class="search">
-                    <input type="text">
+                    <div class="searchbar">
+                    <input type="text" style="width: 581px; height: 43.6px; padding: 13px 52px 13px 13px;">
+                    <button style=" outline: none; border: none; background-color: white;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                     <ul>
                         <li><a href="#">김초엽 신간</a></li>
                         <li><a href="#">빌게이츠 추천</a></li>
@@ -49,8 +53,9 @@
                 </div>
             </div>
             <div class="mypage">
+                
                 <ul>
-                    <li><a href="#">전체 카테고리</a></li>
+                    <a href="#"><i class="fa-solid fa-bars" style="margin-right: 10px;"></i>전체 카테고리</a>
                     <li><a href="#">베스트</a></li>
                     <li><a href="#">신상품</a></li>
                     <li><a href="#">추천</a></li>
@@ -66,169 +71,372 @@
                 </ul>
             </div>
 
-            </div>
+        </div>
         </div>
     </header>
 
-    
-    
 
-    
-    
+
+
+
+
     <div id="slider">
         <!-- Swiper -->
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                
+            <div class="swiper-wrapper" style="margin: 0;">
+                <div class="swiper-slide"><img src="./openApi_project/img/banner1 (2).png" alt="" style="object-fit: contain; background-color: #fcf8d8 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner2 (2).png" alt="" style="object-fit: contain; background-color:#e2f1b9 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner3 (2).png" alt="" style="object-fit: contain; background-color: #fff4f3 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner4 (2).png " alt="" style="object-fit: contain; background-color:#0e994c ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner5 (2).png " alt="" style="object-fit: contain; background-color:#0b9b41 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner6 (2).png " alt="" style="object-fit: contain; background-color:#bef1e6 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner7 (2).png " alt="" style="object-fit: contain; background-color:#8ad170 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner8 (2).png " alt="" style="object-fit: contain; background-color:#6337e1 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner9 (2).png " alt="" style="object-fit: contain; background-color:#e2fecc ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner11 (2).png " alt="" style="object-fit: contain; background-color:#f9d23b;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner12 (2).png " alt="" style="object-fit: contain; background-color:#fff7e6 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner13 (2).png " alt="" style="object-fit: contain; background-color: #ff8e1e;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner14 (2).png " alt="" style="object-fit: contain; background-color:#eaf6e8 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner15 (2).png " alt="" style="object-fit: contain; background-color:#ffe3e5 ;"></div>
+                <div class="swiper-slide"><img src="./openApi_project/img/banner16 (2).png " alt="" style="object-fit: contain; background-color: #67dbd1;" ></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-<div class="mainall">
-    <!-- new  주간 베스트 셀러-->
-     <div class="new">
-        <h2 style="margin: 50px;">주간 베스트셀러</h2>
+    <section>
         <ul>
-            <li><a href="#">종합</a>
-            <li><a href="#">국내소설</a>
-            <li><a href="#">외국소설</a>
-            <li><a href="#">에세이</a>
-            <li><a href="#">경제경영</a>
-            <li><a href="#">인문과학</a>
-            <li><a href="#">어린이</a>
-            <li><a href="#">외국어</a>
-            <li><a href="#">자기계발</a>
-            <li><a href="#">유아</a>
-            <li><a href="#">가정/생활/요리</a>
-            <li><a href="#">청소년</a>
-            <li><a href="#">만화</a>
+            <li>
+                <a href="">
+                    <div><i class="fa-regular fa-calendar-check"></i></div>
+                    <span>출석체크</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div><i class="fa-solid fa-gift"></i></div>
+                    <span>이벤트</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                    <img src="./openApi_project/img/coupon.png" style="width: 36px; height: 36px;"alt="" >
+                    </div>
+                    <span>혜택안내</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div><i class="fa-solid fa-shop"></i></div>
+                    <span>매장안내</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div>
+                    <img src="./openApi_project/img/reading-book.png" style="width: 36px; height: 36px; alt="">
+                    
+                    </div><span>나우드림</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div></div>
+                </a>
+            </li>
         </ul>
-        <!-- Swiper -->
-  <div class="swiper new_item">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <!-- <div class="swiper-pagination"></div> -->
-  </div>
 
-     </div>
-   <!-- 화제의신간 -->
-     <div class="new1">
-        <h2>주간 베스트셀러</h2>
-        <ul>
-            <li><a href="#">종합</a>
-            <li><a href="#">국내소설</a>
-            <li><a href="#">외국소설</a>
-            <li><a href="#">에세이</a>
-            <li><a href="#">경제경영</a>
-            <li><a href="#">인문과학</a>
-            <li><a href="#">어린이</a>
-            <li><a href="#">외국어</a>
-            <li><a href="#">자기계발</a>
-            <li><a href="#">유아</a>
-            <li><a href="#">가정/생활/요리</a>
-            <li><a href="#">청소년</a>
-            <li><a href="#">만화</a>
-        </ul>
-        <!-- Swiper -->
-  <div class="swiper new_item">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <!-- <div class="swiper-pagination"></div> -->
-  </div>
 
-     </div>
-<!-- 인기 검색어 -->
-     <div class="new2">
-        <h2>주간 베스트셀러</h2>
-        <ul>
-            <li><a href="#">종합</a>
-            <li><a href="#">국내소설</a>
-            <li><a href="#">외국소설</a>
-            <li><a href="#">에세이</a>
-            <li><a href="#">경제경영</a>
-            <li><a href="#">인문과학</a>
-            <li><a href="#">어린이</a>
-            <li><a href="#">외국어</a>
-            <li><a href="#">자기계발</a>
-            <li><a href="#">유아</a>
-            <li><a href="#">가정/생활/요리</a>
-            <li><a href="#">청소년</a>
-            <li><a href="#">만화</a>
-        </ul>
-        <!-- Swiper -->
-  <div class="swiper new_item">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <!-- <div class="swiper-pagination"></div> -->
-  </div>
+    </section>
 
-     </div>
-</div>
+
+
+
+    <div class="mainall">
+        <!-- new  주간 베스트 셀러-->
+        <div class="new">
+            <div>
+                <h2>주간 베스트셀러<span style="opacity: 0.4;">2025.09.08 ~ 2025.09.14 </span></h2>
+                <ul>
+                    <li><a href="#">종합</a>
+                    <li><a href="#">국내소설</a>
+                    <li><a href="#">외국소설</a>
+                    <li><a href="#">에세이</a>
+                    <li><a href="#">경제경영</a>
+                    <li><a href="#">인문과학</a>
+                    <li><a href="#">어린이</a>
+                    <li><a href="#">외국어</a>
+                    <li><a href="#">자기계발</a>
+                    <li><a href="#">유아</a>
+                    <li><a href="#">가정/생활/요리</a>
+                    <li><a href="#">청소년</a>
+                    <li><a href="#">만화</a>
+                </ul>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper new_item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+        </div>
+        <!-- 화제의신간 -->
+        <div class="new">
+            <h2>화제의 신간</h2>
+            <ul class="newli">
+                <li><a href="#">종합</a>
+                <li><a href="#">소설/에세이/시</a>
+                <li><a href="#">자녀교육/건강/여행/요리</a>
+                <li><a href="#">유아/어린이/초등학습</a>
+                <li><a href="#">중/고학습</a>
+                <li><a href="#">인문/역사</a>
+                <li><a href="#">외국어</a>
+                <li><a href="#">예술</a>
+                <li><a href="#">컴퓨터/IT</a>
+                <li><a href="#">종교</a>
+                <li><a href="#">경제/자기계발</a>
+                <li><a href="#">자연/과학</a>
+
+            </ul>
+            <!-- Swiper -->
+            <div class="swiper new_item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+        </div>
+        <!-- 인기 검색어 -->
+        <div class="new" style="margin-top: 90px;">
+            <h2>인기 검색어</h2>
+            <ul>
+                <li><a href="#">종합</a>
+                <li><a href="#">국내소설</a>
+                <li><a href="#">외국소설</a>
+                <li><a href="#">에세이</a>
+                <li><a href="#">경제경영</a>
+                <li><a href="#">인문과학</a>
+                <li><a href="#">어린이</a>
+                <li><a href="#">외국어</a>
+                <li><a href="#">자기계발</a>
+                <li><a href="#">유아</a>
+                <li><a href="#">가정/생활/요리</a>
+                <li><a href="#">청소년</a>
+                <li><a href="#">만화</a>
+            </ul>
+            <!-- Swiper -->
+            <div class="swiper new_item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+        </div>
+        <!-- MD 추천 도서 -->
+        <div class="new">
+            <h2>MD 추천 도서</h2>
+            <ul>
+                <li><a href="#">종합</a>
+                <li><a href="#">국내소설</a>
+                <li><a href="#">외국소설</a>
+                <li><a href="#">에세이</a>
+                <li><a href="#">경제경영</a>
+                <li><a href="#">인문과학</a>
+                <li><a href="#">어린이</a>
+                <li><a href="#">외국어</a>
+                <li><a href="#">자기계발</a>
+                <li><a href="#">유아</a>
+                <li><a href="#">가정/생활/요리</a>
+                <li><a href="#">청소년</a>
+                <li><a href="#">만화</a>
+            </ul>
+            <!-- Swiper -->
+            <div class="swiper new_item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+        </div>
+        <!--  급상승 도서 -->
+        <div class="new">
+            <h2>급상승 도서</h2>
+            <ul>
+                <li><a href="#">종합</a>
+                <li><a href="#">국내소설</a>
+                <li><a href="#">외국소설</a>
+                <li><a href="#">에세이</a>
+                <li><a href="#">경제경영</a>
+                <li><a href="#">인문과학</a>
+                <li><a href="#">어린이</a>
+                <li><a href="#">외국어</a>
+                <li><a href="#">자기계발</a>
+                <li><a href="#">유아</a>
+                <li><a href="#">가정/생활/요리</a>
+                <li><a href="#">청소년</a>
+                <li><a href="#">만화</a>
+            </ul>
+            <!-- Swiper -->
+            <div class="swiper new_item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+        </div>
+        <!-- HOT BOOK -->
+        <div class="new">
+            <h2>HOT BOOK</h2>
+            <ul>
+                <li><a href="#">종합</a>
+                <li><a href="#">국내소설</a>
+                <li><a href="#">외국소설</a>
+                <li><a href="#">에세이</a>
+                <li><a href="#">경제경영</a>
+                <li><a href="#">인문과학</a>
+                <li><a href="#">어린이</a>
+                <li><a href="#">외국어</a>
+                <li><a href="#">자기계발</a>
+                <li><a href="#">유아</a>
+                <li><a href="#">가정/생활/요리</a>
+                <li><a href="#">청소년</a>
+                <li><a href="#">만화</a>
+            </ul>
+            <!-- Swiper -->
+            <div class="swiper new_item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+        </div>
+
+    </div>
 
 
     <footer>
         <div class="container">
-            
+
             <div class="block">
                 <div class="up">
                     <div class="consumer">
-                        <span>고객센터
-                            <br>
-                        </span>
-                        <h2><a href="#">1544-9020</a></h2>
-                        <div>
-                            상담가능시간 평일 09:00~ 18:00 / 점심시간 12:15 ~ 13:15
-                            대표 메일 customer@ypbooks.co.kr
-                            대량 주문 webmaster@ypbooks.co.kr
-                            <a href="#">FAQ ></a><a href="#">1:1고객상담 ></a><a href="#">입점문의 ></a>
-    
+                        <span style="margin-bottom: 16px;">고객센터<br></span>
+
+                        <h1><a href="#">1544-9020</a></h1>
+                        <div style="margin-top: 16px;">
+                            <dl>
+                                <dt>상담가능시간</dt>
+                                <dd>평일 09:00~ 18:00 / 점심시간 12:15 ~ 13:15</dd>
+                            </dl>
+                            <dl>
+                                <dt>대표 메일</dt>
+                                <dd>customer@ypbooks.co.kr</dd>
+                            </dl>
+                            <dl>
+                                <dt>대량 주문</dt>
+                                <dd>ebmaster@ypbooks.co.kr</dd>
+                            </dl>
+                            <div style="margin-top: 21px;">
+                                <a href="#">FAQ ></a><a href="#" style="margin-left: 11px;">1:1고객상담 ></a><a href="#"
+                                    style="margin-left: 11px;">입점문의 ></a>
+                            </div>
                         </div>
                     </div>
                     <div class="fnav">
-                        <div>
+                        <div class="nex">
                             <span>영풍문고</span>
                             <ul>
                                 <li><a href="#">회사소개</a></li>
@@ -236,7 +444,7 @@
                                 <li><a href="#">나우드림</a></li>
                             </ul>
                         </div>
-                        <div>
+                        <div class="nex">
                             <span>비즈니스</span>
                             <ul>
                                 <li><a href="#">입점문의</a></li>
@@ -244,7 +452,7 @@
                                 <li><a href="#" style="color: aquamarine;">출판사통합관리 SCM</a></li>
                             </ul>
                         </div>
-                        <div>
+                        <div class="nex">
                             <span>쇼핑도우미</span>
                             <ul>
                                 <li><a href="#">도서검색</a></li>
@@ -256,34 +464,38 @@
                                 <li><a href="#">청약철회</a></li>
                             </ul>
                         </div>
-                        <div>
+                        <div class="fnavf">
                             <span>고객센터</span>
+
                             <ul>
                                 <li><a href="#">1:1고객상담</a></li>
                                 <li><a href="#">FAQ</a></li>
                                 <li><a href="#">공지사항</a></li>
                             </ul>
+
                         </div>
                     </div>
                     <hr>
                     <div class="fnav2"></div>
                 </div>
                 <div class="down">
-                    <div class="flogo"></div>
+                    <div class="flogo"><img src="./openApi_project/img/영풍문고 - 서점다운 서점.html" alt="아랫로고"></div>
                     <div class="ful">
                         <ul>
-                            <li><a href="#">이용약관  |</a></li>
-                            <li><a href="#">개인정보처리방침  |</a></li>
-                            <li><a href="#">영상정보관리방침  |</a></li>
-                            <li><a href="#">청소년보호정책  |</a></li>
-                            <li><a href="#">이메일 무단 수집거부  </a></li>
+                            <li><a href="#">이용약관 |</a></li>
+                            <li><a href="#">개인정보처리방침 |</a></li>
+                            <li><a href="#">영상정보관리방침 |</a></li>
+                            <li><a href="#">청소년보호정책 |</a></li>
+                            <li><a href="#">이메일 무단 수집거부 </a></li>
                         </ul>
-                    </div>
-                    <div class="fclass">
-                        <span>(주) 영풍문고  | 주소 서울특별시 강남구 강남대로 542(논현동,영풍빌딩) (우)06110  | 대표이사 김경환
-                              사업자 등록번호 773-86-01800 <a style="color: aquamarine;">사업자정보확인</a>  |  통신판매등록번호 2024-서울강남-06241  |  개인정보관리 책임자 조순제
-                        </span>
-                        <p>COPYRIGHT @ YOUNGPOONG BOOKSTORE INC.ALL RIGHTS RESERVED</p>
+
+
+                        <div class="finfo" style="margin-top: 20px;">
+                            <span>(주) 영풍문고</span><dl><dt>주소</dt><dd>서울특별시 강남구 강남대로 542(논현동,영풍빌딩) (우)06110</dd></dl> <dl><dt>대표이사</dt><dd>김경환</dd></dl><dl><dt style="margin: 0;">사업자 등록번호</dt><dd>773-86-01800 <a style="color: aquamarine;">사업자정보확인</a></dd></dl><dl><dt>통신판매등록번호</dt><dd> 2024-서울강남-06241</dd></dl><dl><dt>개인정보관리 책임자</dt><dd>조순제</dd></dl>
+                        </dl>
+
+
+                        <p style="margin-top: 5px;">COPYRIGHT @ YOUNGPOONG BOOKSTORE INC.ALL RIGHTS RESERVED</p>
                     </div>
                 </div>
             </div>
@@ -291,31 +503,44 @@
     </footer>
 
     <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    //new
-    var swiper = new Swiper(".new_item", {
-        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      slidesPerView: 5,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-    
+    <!-- Initialize Swiper -->
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {   // 자동 슬라이드
+        delay: 3000,           // 3초마다 슬라이드
+        disableOnInteraction: false, // 클릭해도 자동재생 유지
+    },
+
+    effect: "fade",            // 페이드 효과
+    fadeEffect: {
+        crossFade: true         // 부드럽게 전환
+    },
+
+    speed: 800  
+        });
+        //new
+        var swiper = new Swiper(".new_item", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            slidesPerView: 5,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
 </body>
+
 </html>

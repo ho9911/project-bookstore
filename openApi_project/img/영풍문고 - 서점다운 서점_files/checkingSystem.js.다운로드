@@ -1,0 +1,23 @@
+
+const startInInspectTime = '2025-06-20 01:35:00'
+const endInInspectTime = '2025-06-20 04:00:00'
+
+const getNow = () => {
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = ('0' + (today.getMonth() + 1)).slice(-2);
+    let day = ('0' + today.getDate()).slice(-2);
+    let hours = ('0' + today.getHours()).slice(-2);
+    let minutes = ('0' + today.getMinutes()).slice(-2);
+    let seconds = ('0' + today.getSeconds()).slice(-2);
+    return year + '-' + month  + '-' + day+ ' ' +  hours + ':' + minutes  + ':' + seconds;
+}
+
+const isTimeInInspect = () => {
+    const now = getNow()
+    return (startInInspectTime < now) && (now < endInInspectTime)
+}
+
+window.isTimeInInspect = isTimeInInspect
+
+window.isSapInspection = false

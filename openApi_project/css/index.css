@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-.mainall{height: 3000px;}
+
 /* silder */
-#slider {width: 100%; height: 370px; background-color: aquamarine;}
+#slider {  width: 100%; height: 370px; background-color: aquamarine;}
 /* main */
 .swiper {
     width: 100%;
@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
 }
+.new_item{width: 100%; height: 60%;}
 
 .swiper-slide img {
     display: block;
@@ -24,25 +25,17 @@
     height: 100%;
     object-fit: cover;
 }
-.new{width: 1120px; height: 500px; margin: 50px auto; }
-.new1{width: 1120px; height: 500px; margin: 50px auto; }
-.new2{width: 1120px; height: 500px; margin: 50px auto; }
+.swiper-wrapper{margin-top: 20px;}
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0;           /* 보이지 않게 */
+    transition: opacity 0.3s;  /* 서서히 나타나도록 */
+}
 
-.new ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
-.new li{padding: 0 7px;}
-
-.new1 ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
-.new1 li{padding: 0 7px;}
-
-.new2 ul{display: flex; justify-content: space-evenly; margin-top: 40px;}
-.new2 li{padding: 0 7px;}
-
-h2 {
-
-  position: relative;   
-  z-index: 2;
-  background: #fff; /* 겹침 방지 */
-  margin-bottom: 10px;
+/* 마우스를 슬라이드 영역에 올리면 버튼 보임 */
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev {
+    opacity: 1;
 }
 
 
