@@ -9,7 +9,7 @@
     height: 100%;
 }
 
-.swiper-slide {
+#slider .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #444;
@@ -17,6 +17,20 @@
     justify-content: center;
     align-items: center;
 }
+
+.mainall .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    
+}
+
+.mainall .swiper-slide img {
+    height: auto; 
+    
+}
+
+.views{width: 220px; height: 95px; background-color: blueviolet;}
 .new_item{width: 100%; height: 60%;}
 
 .swiper-slide img {
@@ -39,5 +53,31 @@
 }
 
 
+/* main */
+.mainall{width:1060px; height: 100%; margin: 0 auto;}
+.fool{margin: 0 auto; width: 1060px;}
 
+.fool ul{display: flex; justify-content: flex-start; margin-top: 24px; gap: 45px; }
+.fool li{text-align: center; }
+.fool ul li div{width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; }
+.today{height: 400px;}
+.new{width: 1120px; height: 500px;   margin:  0 auto; margin-top: 30px;}
+
+.mainall > div{width: 100%;}
+.mainall ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  padding-left: 0;             /* ul 기본 padding 제거 */
+  margin-left: 0;              /* ul 기본 margin 제거 */
+  list-style: none;            /* 기본 점 제거 */
+}
+.mainall li {
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.3);
+  font-size: 14px;
+  margin: 8px 8px 0 0; /* 오른쪽과 위 여백만 주기 (왼쪽 마진 제거) */
+  padding: 13px;
+}
+.weklely{display: flex; align-items: center;}
 

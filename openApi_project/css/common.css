@@ -25,43 +25,30 @@ body{font-family: 'Pretendard';}
 
 /* header */
 header{width: 100%; height: 235px;background-color: gold;}
-.header_top {width: 1060px; height: 40px; display: flex; justify-content: space-between;  background-color: tomato;}
+.header_top {width: 1060px; height: 40px; display: flex; justify-content: space-between; align-items: center;  font-size: 12px; background-color: tomato;}
+
+
+
 header ul{display: flex; justify-content: space-evenly;}
 header li{padding: 0 7px;}
 .slide img{width: 100%; height: 100%; object-fit: contain; display: block;}
-.main_header{width: 75%; height: 145px; display: flex; align-items: center; background-color: aqua;}
-.logo {width: 175px;height: 60px; display: flex;  background-color: yellowgreen;}
+.main_header{width: 100%; height: 145px; display: flex; align-items: center; background-color: aqua;}
+.header_center{width: 1060px; height: 95px; display: flex; align-items: center;  background-color: pink;}
+.logo {width: 175px;height: 60px; display: flex;  align-items: center;  background-color: yellowgreen;}
 .logo i {font-size: 50px; color: white;}
-.search {width: 570px; height: 85px;  margin-left: 30px; display: flex; flex-wrap: wrap; margin-top: 25px;  background-color: purple;}
-.searchbar{display: flex;}
-.search ul{font-size: 14px; margin-top: -13px;}
-.mypage{width: 100%; height: 50px; display: flex; justify-content: space-between; background-color: azure;}
 
 
+.searchbar{display: flex; margin: 27px 40px 0 50px;flex-wrap: wrap;}
+.searchbanner{width: 570px; height: 85px;   display: flex; flex-wrap: wrap;   }
+.search ul{font-size: 14px; display: flex; align-items: center; }
+
+.mypage{width: 100%; height: 50px; display: flex; justify-content: space-between; align-items: center;  background-color: azure;}
+.mypage a {display: flex; align-items: center;}
+.mypage ul{display: flex; align-items: center;}
+.mypage ul li :first-child{margin-left: 6px;}
 /* .noti{height: 55px; display: flex; justify-content: eft; background-color: burlywood;}
 .roll{margin: 0 0 24px;} */
 
-/* main */
-.mainall{width:1060px; height: 100%; margin: 0 auto;}
-
-.new{width: 1120px; height: 500px;   margin:  0 auto; margin-top: 30px;}
-
-.mainall > div{width: 100%;}
-.mainall ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; /* 왼쪽 정렬 */
-  padding-left: 0;             /* ul 기본 padding 제거 */
-  margin-left: 0;              /* ul 기본 margin 제거 */
-  list-style: none;            /* 기본 점 제거 */
-}
-.mainall li {
-  border-radius: 20px;
-  background-color: rgba(128, 128, 128, 0.3);
-  font-size: 14px;
-  margin: 8px 8px 0 0; /* 오른쪽과 위 여백만 주기 (왼쪽 마진 제거) */
-  padding: 13px;
-}
 
 
 /* footer */
