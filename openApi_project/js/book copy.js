@@ -5,11 +5,11 @@ async function fetchBooks(query) {
                 size: 10
             });
             const url = `https://dapi.kakao.com/v3/search/book?${params}`;
-
+            const Rest_API_KEY = 89edf79660aabccb608d9fb997506d28
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {
-                    Authorization: "KakaoAK 89edf79660aabccb608d9fb997506d28"
+                    Authorization: "KakaoAK ${const Rest_API_KEY}` "
                 }
             });
 
@@ -24,14 +24,13 @@ async function fetchBooks(query) {
             try {
                 // query와 section class를 매핑
                 const queries = [
-                    { query: "공존", sectionClass: ".toto" },
                     { query: "베르베르", sectionClass: ".today" },
                     { query: "추천", sectionClass: ".weekly" },
                     { query: "컴퓨터", sectionClass: ".hot" },
                     { query: "만화", sectionClass: ".pick" },
                     { query: "에세이", sectionClass: ".best" },
-                    { query: "기욤", sectionClass: ".pop" },
-                    { query: "한강", sectionClass: ".hotbook" },
+                    { query: "외국소설", sectionClass: ".pop" },
+                    { query: "국내소설", sectionClass: ".hotbook" },
                 ];
 
                 for (const { query, sectionClass } of queries) {
@@ -71,7 +70,6 @@ async function fetchBooks(query) {
             } catch (error) {
                 console.error('에러 발생:', error);
             }
-            
         }
 
         bookData();

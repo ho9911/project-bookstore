@@ -8,6 +8,30 @@
     width: 100%;
     height: 100%;
 }
+.toto2 {width: 219.9px; height: 94.99px; display: flex; flex-wrap: wrap;}
+.toto2 .toto {height: 100%; width: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.toto2 .swiper-slide img{
+    display: block;
+    width: 50%;
+    height: 40%;
+    object-fit: contain; }
+.toto .swiper-slide h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.toto .swiper-slide h6 {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px;
+}  
+
+
+
 
 #slider .swiper-slide {
     text-align: center;
@@ -76,7 +100,7 @@
 .fool ul li div{width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; background-color: #f6f6f6; border-radius: 120%; }
 .fool ul li div img{width: 32px; height: 32px;}
 .new{width: 1120px; height: 500px;   margin:  0 auto; margin-top: 30px;}
-
+.setting{width: 50; height: 50px;}
 .mainall > div{width: 100%;}
 .mainall ul {
   display: flex;
