@@ -45,20 +45,33 @@ async function fetchBooks(query) {
                         const doc = data.documents[i];
                         if (!doc) return;
 
+                        box.innerHTML=`<a href="./subindex.html">
+                        <img src="${doc.thumbnail}">
+                        <div class="text">
+                        <h3>${doc.title}</h3>
+                        <h6>${doc.authors}</h6>
+                        </div>
+                        </a>`
+
                         // <img>
-                        const img = document.createElement("img");
-                        img.src = doc.thumbnail;
-                        box.appendChild(img);
+                        // const img = document.createElement("img");
+                        // img.src = doc.thumbnail;
+                        // box.appendChild(img);
 
-                        // <h3> 제목
-                        const h3 = document.createElement("h3");
-                        h3.textContent = doc.title;
-                        box.appendChild(h3);
+                        // const text = document.createElement("div");
+                        // text.classList.add('text');
 
-                        // <h6> 저자
-                        const h6 = document.createElement("h6");
-                        h6.textContent = doc.authors;
-                        box.appendChild(h6);
+                        // // <h3> 제목
+                        // const h3 = document.createElement("h3");
+                        // h3.textContent = doc.title;
+                        // text.appendChild(h3);
+
+                        // // <h6> 저자
+                        // const h6 = document.createElement("h6");
+                        // h6.textContent = doc.authors;
+                        // text.appendChild(h6);
+
+                        // box.appendChild(text)
 
                         // <p> 내용 일부
                         // const p = document.createElement("p");
@@ -70,8 +83,5 @@ async function fetchBooks(query) {
                 }
             } catch (error) {
                 console.error('에러 발생:', error);
-            }
-            
-        }
-
+            }}
         bookData();

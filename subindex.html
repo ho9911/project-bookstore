@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api 연습</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+    <link rel="stylesheet" href="./openApi_project/css/common.css">
+    <link rel="stylesheet" href="./openApi_project/css/index.css">
+    <link rel="stylesheet" href="./openApi_project/css/sub.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="./openApi_project/js/sub_book.js"></script>
+    <script src="./openApi_project/js/book.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <nav>
+                    <ul>
+                        <li><a href="#">매장안내</a></li>
+                        <li><a href="#">혜택안내</a></li>
+                        <li><a href="#">나무드림</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">주문배송</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="main_header">
+                <div class="header_center"> <!-- 추가 -->
+
+                    <div class="logo">
+                        <img src="./openApi_project/img/2fbdbcb3-3c0c-46e5-a30b-3e8acdbae0c2.png" alt="윗로고"
+                            style="width: 169px; height: 38px;">
+                    </div>
+
+                    <div>
+                        <div class="searchbar">
+                            <input type="search"
+                                style="width: 581px; height: 43.6px; padding: 13px 52px 13px 13px; border-radius: 10px; border-width: thin;">
+                            <button style="background-color:#ffffff">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="searchbanner" style="width: 581px; height: 16px; margin-top: 5px;">
+                            <ul>
+                                <li style="padding-left: 0;"><a href="#">김초엽 신간</a></li>
+                                <li><a href="#">빌게이츠 추천</a></li>
+                                <li><a href="#">베르나르 베르베르</a></li>
+                                <li><a href="#">가공범</a></li>
+                                <li><a href="#">EBS 만점왕</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="toto2">
+                        <div class="swiper toto">
+                            <div class="swiper-wrapper" style="margin-top: 0;">
+                                <div class="swiper-slide"></div>
+                                <div class="swiper-slide"></div>
+                                <div class="swiper-slide"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!-- 추가 -->
+
+            </div>
+            <div class="mypage">
+
+                <ul>
+                    <a href="#"><img src="./openApi_project/img/icon_menu.svg" style="margin-right: 10px;" alt="">전체
+                        카테고리</a>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">추천</a></li>
+                    <li><a href="#">기프티콘</a></li>
+                    <li><a href="#">컬쳐페이지</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">혜택</a></li>
+                    <li><a href="#">사은품</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">출석체크</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section>
+        <div class="poo">
+
+
+            <div class="sub_box"></div>
+
+            <table>
+                <tr style="margin-top: 5px; ">
+                    <td>판매가</td>
+                    <td class="pricenum"></td>
+                </tr>
+
+                <tr>
+                    <td>적립금혜택</td>
+                    <td>38p</td>
+                </tr>
+
+                <tr>
+                    <td>브랜드</td>
+                    <td>피오피스토리</td>
+                </tr>
+
+                <tr>
+                    <td>배송구분</td>
+                    <td>업체배송</td>
+                </tr>
+
+                <tr>
+                    <td>배송비</td>
+                    <td>조건부무료배송</td>
+                </tr>
+
+                <tr>
+                    <td>수량</td>
+                    <td>
+                        <select name="select" id="select">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <button>바로 구매</button>
+                        <button>장바구니 담기</button>
+                        <button>찜하기</button>
+                        <button>조르기</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <!-- <div class="contextbox"></div> -->
+        <div class="texts">
+            <div id="tmpBox"></div>
+            <div id="tmpBox2"></div>
+            <div id="tmpBox3"></div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="block">
+                <div class="up">
+                    <div class="consumer">
+                        <span style="margin-bottom: 16px;">고객센터<br></span>
+
+                        <h1><a href="#">1544-9020</a></h1>
+                        <div style="margin-top: 16px;">
+                            <dl>
+                                <dt>상담가능시간</dt>
+                                <dd>평일 09:00~ 18:00 / 점심시간 12:15 ~ 13:15</dd>
+                            </dl>
+                            <dl>
+                                <dt>대표 메일</dt>
+                                <dd>customer@ypbooks.co.kr</dd>
+                            </dl>
+                            <dl>
+                                <dt>대량 주문</dt>
+                                <dd>ebmaster@ypbooks.co.kr</dd>
+                            </dl>
+                            <div style="margin-top: 21px;">
+                                <a href="#">FAQ ></a><a href="#" style="margin-left: 11px;">1:1고객상담 ></a><a href="#"
+                                    style="margin-left: 11px;">입점문의 ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fnav"">
+                        <div class=" nex">
+                        <span>영풍문고</span>
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">나우드림</a></li>
+                        </ul>
+                    </div>
+                    <div class="nex">
+                        <span>비즈니스</span>
+                        <ul>
+                            <li><a href="#">입점문의</a></li>
+                            <li><a href="#">광고안내</a></li>
+                            <li><a href="#" style="color: aquamarine;">출판사통합관리 SCM</a></li>
+                        </ul>
+                    </div>
+                    <div class="nex">
+                        <span>쇼핑도우미</span>
+                        <ul>
+                            <li><a href="#">도서검색</a></li>
+                            <li><a href="#">회원등급 혜택</a></li>
+                            <li><a href="#">주문/배송</a></li>
+                            <li><a href="#">취소/교환/환불</a></li>
+                            <li><a href="#">적립금 사용</a></li>
+                            <li><a href="#">교환권 사용</a></li>
+                            <li><a href="#">청약철회</a></li>
+                        </ul>
+                    </div>
+                    <div class="fnavf" ;">
+                        <span>고객센터</span>
+
+                        <ul>
+                            <li><a href="#">1:1고객상담</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="down">
+                <div class="flogo"><img src="./openApi_project/img/스크린샷 2025-09-12 153328.png" alt="아랫로고"></div>
+                <div class="ful">
+                    <ul>
+                        <li><a href="#">이용약관 |</a></li>
+                        <li><a href="#">개인정보처리방침 |</a></li>
+                        <li><a href="#">영상정보관리방침 |</a></li>
+                        <li><a href="#">청소년보호정책 |</a></li>
+                        <li><a href="#">이메일 무단 수집거부 </a></li>
+                    </ul>
+
+
+                    <div class="finfo" style="margin-top: 20px;">
+                        <span>(주) 영풍문고</span>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>서울특별시 강남구 강남대로 542(논현동,영풍빌딩) (우)06110</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표이사</dt>
+                            <dd>김경환</dd>
+                        </dl>
+                        <dl>
+                            <dt style="margin: 0;">사업자 등록번호</dt>
+                            <dd>773-86-01800 <a style="color: aquamarine;">사업자정보확인</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>통신판매등록번호</dt>
+                            <dd> 2024-서울강남-06241</dd>
+                        </dl>
+                        <dl>
+                            <dt>개인정보관리 책임자</dt>
+                            <dd>조순제</dd>
+                        </dl>
+                        </dl>
+
+
+                        <p style="margin-top: 5px;">COPYRIGHT @ YOUNGPOONG BOOKSTORE INC.ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+
+        var swiper = new Swiper(".toto", {
+            autoplay: {   // 자동 슬라이드
+                delay: 3000,           // 3초마다 슬라이드
+                disableOnInteraction: false, // 클릭해도 자동재생 유지
+            },
+
+            effect: "fade",            // 페이드 효과
+            fadeEffect: {
+                crossFade: true         // 부드럽게 전환
+            },
+            slidesPerView: 5,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

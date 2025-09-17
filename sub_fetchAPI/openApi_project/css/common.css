@@ -1,0 +1,112 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+il,li{list-style: none;}
+a {text-decoration: none; color: #333;}
+
+body{font-family: 'Pretendard';}
+
+
+.container {width: 1060px; height: 100%; margin: 0 auto; }
+
+
+/* header */
+header{width: 100%; height: 235px;}
+.header_top {width: 1060px; height: 40px; display: flex; justify-content: space-between; align-items: center;  font-size: 12px;}
+
+
+
+header ul{display: flex; justify-content: space-evenly;}
+header li{padding: 0 7px;}
+.slide img{width: 100%; height: 100%; object-fit: contain; display: block;}
+.main_header{width: 100%; height: 145px; display: flex; align-items: center; border-top: 1px solid rgba(128, 128, 128, 0.1); border-bottom: 1px solid rgba(128, 128, 128, 0.3); }
+.header_center{width: 1060px; height: 95px; display: flex; align-items: center;  }
+.logo {width: 175px;height: 60px; display: flex;  align-items: center;  }
+.logo i {font-size: 50px; color: white;}
+
+
+.searchbar{margin: 27px 40px 0 50px; position: relative; display: inline-block;  }
+.searchbanner{width: 570px; height: 85px;   display: flex; flex-wrap: wrap;  margin: 0 40px 0 50px;  font-size: 14px; display: flex;}
+.searchbar button{position: absolute; right: 8px; transform: translateY(5%);  outline: none; border: none; cursor: pointer;  ;}
+.searchbar button i{color: #333;}
+.mypage{width: 100%; height: 50px; display: flex; justify-content: space-between; align-items: center;  }
+.mypage a {display: flex; align-items: center;}
+.mypage ul{display: flex; align-items: center;}
+.mypage ul li :first-child{margin-left: 6px;}
+/* .noti{height: 55px; display: flex; justify-content: eft; background-color: burlywood;}
+.roll{margin: 0 0 24px;} */
+.toto2 {width: 219.9px; height: 94.99px; display: flex; flex-wrap: wrap;}
+.toto2 .toto {height: 100%; width: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.toto .swiper-slide{
+    display: flex;
+  justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.toto2 .swiper-slide img{
+    display: block;
+    width: 40%;
+    height: 100%;
+    object-fit: contain; }
+.toto .swiper-slide h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.toto .swiper-slide h6 {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px;
+}  
+.toto .text{width: 60%;}
+
+
+
+
+/* footer */
+
+footer{width: 100%; height: 462.8px; background-color: #f9f9f9;  }
+
+
+.block{padding: 40px 0px 38px;}
+
+.up{height: 209px; display: flex;  border-bottom: 1px solid rgba(128, 128, 128, 0.3); border-right: none; }
+.consumer{width: 318px;height: 209px; display: flex; flex-direction: column;  }
+.consumer div{font-size: 13px;   } 
+.consumer div dl{display: flex;  flex-wrap: wrap;  }
+.consumer div dt{width: 68px; height: 18px;}
+.consumer div dd{margin-left: 8px;}
+.consumer div a{border-radius: 5px; background-color: rgba(128, 128, 128, 0.3); padding: 8px 16px 8px 20px;  font-size: 14px;}
+
+.nex{margin-left: 16px; width: 140px; }
+.fnav{height: 209px; display: flex; justify-content: flex-end;  width: 743px;  }
+.fnavf{margin-left: 16px; width: 63px;}
+.fnav ul{display: flex; flex-direction: column;}
+.down{height: 147px; display: flex; justify-content: left; padding-top: 23px; }
+footer ul{display: flex; justify-content: space-evenly;}
+.flogo{width: 135px; height: 55px; margin-right: 45.6px; display: flex; align-items: center; margin-top: 40px;   }
+.ful{width: 670px; height: 122px; display: flex; justify-content: left; flex-wrap: wrap;}
+.fclass{height: 48px;}
+.finfo{display: flex; flex-wrap: wrap; font-size: 13px; justify-content: flex-start;}
+.finfo dl{ display: flex; }
+.finfo dd{margin-left: 8px;}
+.finfo dl:not(:first-child, :nth-child(4))::before { margin-left: 8px;
+  content: "|"; }
+.finfo dt{margin-left: 8px;}

@@ -40,15 +40,42 @@ header li{padding: 0 7px;}
 
 .searchbar{margin: 27px 40px 0 50px; position: relative; display: inline-block;  }
 .searchbanner{width: 570px; height: 85px;   display: flex; flex-wrap: wrap;  margin: 0 40px 0 50px;  font-size: 14px; display: flex;}
-
-
+.searchbar button{position: absolute; right: -1px; transform: translateY(5%);  outline: none; border: none; cursor: pointer;  ;}
+.searchbar button i{color: #333;}
 .mypage{width: 100%; height: 50px; display: flex; justify-content: space-between; align-items: center;  }
 .mypage a {display: flex; align-items: center;}
 .mypage ul{display: flex; align-items: center;}
 .mypage ul li :first-child{margin-left: 6px;}
 /* .noti{height: 55px; display: flex; justify-content: eft; background-color: burlywood;}
 .roll{margin: 0 0 24px;} */
+.toto2 {width: 219.9px; height: 94.99px;}
+.toto2 .toto {height: 100%; width: 100%; display: flex;  align-items: center; gap: 10px; }
+.toto .swiper-slide a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.toto2 .swiper-slide a img{
+    display: block;
+    width: 40%;
+    height: 100%;
+    object-fit: contain; }
+.toto .swiper-slide a h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
+.toto .swiper-slide a h6 {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px;
+}  
+.toto .text{width: 60%;}
 
 
 
@@ -74,7 +101,7 @@ footer{width: 100%; height: 462.8px; background-color: #f9f9f9;  }
 .fnav ul{display: flex; flex-direction: column;}
 .down{height: 147px; display: flex; justify-content: left; padding-top: 23px; }
 footer ul{display: flex; justify-content: space-evenly;}
-.flogo{width: 135px; height: 55px; margin-right: 45.6px;   }
+.flogo{width: 135px; height: 55px; margin-right: 45.6px; display: flex; align-items: center; margin-top: 40px;   }
 .ful{width: 670px; height: 122px; display: flex; justify-content: left; flex-wrap: wrap;}
 .fclass{height: 48px;}
 .finfo{display: flex; flex-wrap: wrap; font-size: 13px; justify-content: flex-start;}

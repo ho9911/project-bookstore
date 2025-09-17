@@ -1,0 +1,61 @@
+async function fetchBooks(query) {
+    const params = new URLSearchParams({
+        target: "title",
+        query,
+        size: 10
+    });
+    const url = `https://dapi.kakao.com/v3/search/book?${params}`;
+
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            Authorization: "KakaoAK 89edf79660aabccb608d9fb997506d28"
+        }
+    });
+
+    if (!response.ok) {
+        throw new Error(`HTTP 오류: ${response.status}`);
+    }
+
+    return response.json();
+}
+
+async function bookData() {
+    try {
+        const queries = [
+            { query: "공존", sectionClass: ".toto" }
+        ];
+
+        for (const { query, sectionClass } of queries) {
+            const data = await fetchBooks(query);
+            console.log("API 응답:", data);
+
+            const section = document.querySelector(sectionClass);
+            if (!section) {
+                console.error("섹션을 못 찾음:", sectionClass);
+                continue;
+            }
+
+            const boxElements = section.querySelectorAll(".swiper-slide");
+            console.log("boxElements:", boxElements);
+
+            boxElements.forEach((box, i) => {
+                if (!box) return;
+                const doc = data.documents[i];
+                if (!doc) return;
+
+                box.innerHTML = `
+                    <a href="${doc.url}" target="_blank">
+                        <img src="${doc.thumbnail}" alt="${doc.title}">
+                        <div class="text">
+                            <h3>${doc.title}</h3>
+                            <h6>${doc.authors.join(", ")}</h6>
+                        </div>
+                    </a>
+                `;
+            });
+        }
+    } catch (error) {
+        console.error("에러 발생:", error);
+    }
+}

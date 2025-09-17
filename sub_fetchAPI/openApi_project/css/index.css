@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+/* silder */
+#slider {  width: 100%; height: 370px; background-color: aquamarine;}
+/* main */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainall .swiper-slide {
+    text-align: start;
+    font-size: 18px;
+    
+    
+}
+
+.mainall .swiper-slide img {
+    height: auto; 
+    
+}
+
+.views{width: 220px; height: 95px; background-color: blueviolet;}
+.new_item{width: 100%; height: 60%;}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new .swiper-slide h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.swiper-slide h6 {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px;
+}
+.swiper-wrapper{margin-top: 20px;}
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0;           /* 보이지 않게 */
+    transition: opacity 0.3s;  /* 서서히 나타나도록 */
+}
+
+/* 마우스를 슬라이드 영역에 올리면 버튼 보임 */
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev {
+    opacity: 1;
+}
+
+
+/* main */
+.mainall{width:1060px; height: 100%; margin: 0 auto;}
+.fool{margin: 0 auto; width: 1060px;}
+
+.fool ul{display: flex; justify-content: flex-start; margin-top: 24px; gap: 45px; }
+.fool li{text-align: center; }
+.fool ul li div{width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; background-color: #f6f6f6; border-radius: 120%; }
+.fool ul li div img{width: 32px; height: 32px;}
+.new{width: 1120px; height: 500px;   margin:  0 auto; margin-top: 30px;}
+.setting{width: 50; height: 50px;}
+.mainall > div{width: 100%;}
+.mainall ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  padding-left: 0;             /* ul 기본 padding 제거 */
+  margin-left: 0;              /* ul 기본 margin 제거 */
+  list-style: none;            /* 기본 점 제거 */
+}
+.mainall li {
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.3);
+  font-size: 14px;
+  margin: 8px 8px 0 0; /* 오른쪽과 위 여백만 주기 (왼쪽 마진 제거) */
+  padding: 13px;
+}
+.weekly1{display: flex; align-items: center;}
+
