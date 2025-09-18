@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./openApi_project/css/index.css">
     <link rel="stylesheet" href="./openApi_project/css/sub.css">
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    
     <script src="./openApi_project/js/sub_book.js"></script>
-    <script src="./openApi_project/js/book.js"></script>
+    
 
 
 </head>
@@ -292,10 +292,27 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="./openApi_project/js/sub_book2.js"></script>
     <!-- Initialize Swiper -->
     <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {   // 자동 슬라이드
+        delay: 3000,           // 3초마다 슬라이드
+        disableOnInteraction: false, // 클릭해도 자동재생 유지
+    },
 
+    effect: "fade",            // 페이드 효과
+    fadeEffect: {
+        crossFade: true         // 부드럽게 전환
+    },
+
+    speed: 800  
+        });
 
         var swiper = new Swiper(".toto", {
             autoplay: {   // 자동 슬라이드
@@ -315,6 +332,7 @@
             },
         });
     </script>
+    
 
 
 </body>

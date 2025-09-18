@@ -28,27 +28,32 @@ async function bookData() {
 
         for (const { query, sectionClass } of queries) {
             const data = await fetchBooks(query);
-
+            console.log("API 응답:", data);
 
             const section = document.querySelector(sectionClass);
+            if (!section) {
+                console.error("섹션을 못 찾음:", sectionClass);
+                continue;
+            }
+
             const boxElements = section.querySelectorAll(".swiper-slide");
+            console.log("boxElements:", boxElements);
 
             boxElements.forEach((box, i) => {
+                if (!box) return;
                 const doc = data.documents[i];
                 if (!doc) return;
 
-                box.innerHTML = `<a href="./subindex.html">
-                <img src="${doc.thumbnail}">
-                <div class="text">
-                <h3>${doc.title}</h3>
-                <h6>${doc.authors}</h6>
-                </div>
-                </a>`
-
+                box.innerHTML=`<a href="./subindex.html">
+                        <img src="${doc.thumbnail}">
+                        <div class="text">
+                        <h3>${doc.title}</h3>
+                        <h6>${doc.authors}</h6>
+                        </div>
+                        </a>`
             });
         }
     } catch (error) {
         console.error("에러 발생:", error);
-    }
-}
+    }}
 bookData();
