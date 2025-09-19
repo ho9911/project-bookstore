@@ -50,6 +50,12 @@ header li{padding: 0 7px;}
 .roll{margin: 0 0 24px;} */
 .toto2 {width: 219.9px; height: 94.99px;}
 .toto2 .toto {height: 100%; width: 100%; display: flex;  align-items: center; gap: 10px; }
+.toto .swiper-slide{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .toto .swiper-slide a{
     display: flex;
     justify-content: space-between;
@@ -77,19 +83,19 @@ header li{padding: 0 7px;}
   margin: 0 0 8px;
 }  
 .toto .text{width: 60%;}
-.toto .swiper-slide1 a{
+.toto .swiper-slide a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     height: 91.59px;
 }
-.toto2 .swiper-slide1 a img{
+.toto2 .swiper-slide a img{
     display: block;
     width: 40%;
     height: 100%;
     object-fit: contain; }
-.toto .swiper-slide1 a h3 {
+.toto .swiper-slide a h3 {
   font-size: 16px;
   font-weight: bold;
   margin: 8px 0 4px;
@@ -98,7 +104,7 @@ header li{padding: 0 7px;}
   text-overflow: ellipsis;
 }
 
-.toto .swiper-slide1 a h6 {
+.toto .swiper-slide a h6 {
   font-size: 14px;
   color: #666;
   margin: 0 0 8px;

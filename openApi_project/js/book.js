@@ -51,6 +51,7 @@ async function fetchBooks(query) {
                         <h3>${doc.title}</h3>
                         <h6>${doc.authors}</h6>
                         </div>
+                        
                         </a>`
 
                         // <img>

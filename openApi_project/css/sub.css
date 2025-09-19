@@ -166,3 +166,23 @@
         
         .textw1{font-size: 14px; line-height: 22px;}
         .textw3{font-size: 14px; line-height: 22px;}
+
+        .change{
+            width: 936px;
+            height: 780px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        .changein{ width: 936px; height: 750px; padding: 51px 0 48px; }
+        .change span{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .change tr{font-size: 13.6px; border-top: 2px solid #f8f8f8;  }
+        .changeul1 li{list-style-type: disc; list-style-position: inside;}
+        .change_table{width: 100%;}
+        
+        .change th{background-color: #f8f8f8; padding: 0 10px;}
+        .change td{padding: 15px;}
+        .change td li::marker{letter-spacing: -2px;   }
