@@ -53,33 +53,6 @@ async function fetchBooks(query) {
                         </div>
                         
                         </a>`
-
-                        // <img>
-                        // const img = document.createElement("img");
-                        // img.src = doc.thumbnail;
-                        // box.appendChild(img);
-
-                        // const text = document.createElement("div");
-                        // text.classList.add('text');
-
-                        // // <h3> 제목
-                        // const h3 = document.createElement("h3");
-                        // h3.textContent = doc.title;
-                        // text.appendChild(h3);
-
-                        // // <h6> 저자
-                        // const h6 = document.createElement("h6");
-                        // h6.textContent = doc.authors;
-                        // text.appendChild(h6);
-
-                        // box.appendChild(text)
-
-                        // <p> 내용 일부
-                        // const p = document.createElement("p");
-                        // p.textContent = doc.contents.substring(0, 60);
-                        // box.appendChild(p);
-
-                    
                     });
                 }
             } catch (error) {
